@@ -1,0 +1,7 @@
+- name: Configure Local Credentials
+  bigip_user:
+    username_credential: "{{ primary_user }}"
+    password_credential: "{{ local_pass }}"
+    state: present
+    provider: "{{ provider }}"
+  delegate_to: localhost

@@ -1,0 +1,6 @@
+- name: Configure Local Credentials
+  eos_user:
+    purge: "{{ purge_users }}"
+    username: "{{ primary_user }}"
+    configured_password: "{{ local_pass }}"
+    state: present

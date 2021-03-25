@@ -1,0 +1,4 @@
+---
+# defaults file for network_credentials
+purge_users: no
+primary_user: "admin"

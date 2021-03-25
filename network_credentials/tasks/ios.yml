@@ -1,0 +1,7 @@
+- name: Configure Local Credentials
+  ios_user:
+    configured_password: "{{ local_pass }}"
+    name: "{{ primary_user }}"
+    purge: "{{ purge_users }}"
+    state: present
+    privilege: 15

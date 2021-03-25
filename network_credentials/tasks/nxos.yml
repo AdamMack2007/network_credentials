@@ -1,0 +1,6 @@
+- name: Configure Local Credentials
+  nxos_user:
+    configured_password: "{{ local_pass }}"
+    name: "{{ primary_user }}"
+    state: present
+    purge: "{{ purge_users }}"
