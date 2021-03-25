@@ -1,7 +1,7 @@
 - name: Configure Local Credentials
   asa_config:
     lines:
-      - "username admin password {{ global_pass }} privilege 15"
+      - "username admin password {{ local_pass }} privilege 15"
 
 - name: Get Existing Users
   asa_command:
